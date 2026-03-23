@@ -36,6 +36,10 @@
   ],
   "exclude": [
     "node_modules",
-    "docs"
+    "docs",
+
+    // 👇 关键：彻底排除 CLI（解决你当前所有报错）
+    "packages/cli",
+    "**/packages/cli/**"
   ]
 }
